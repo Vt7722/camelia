@@ -8,7 +8,8 @@
     <title>Camelia</title>
     <style type="text/css">
         body{
-            background-image: url(https://i.pinimg.com/originals/54/46/ac/5446ac27afc785da449efc1b1a91b72d.jpg);
+            /* background-image: url(https://i.pinimg.com/originals/54/46/ac/5446ac27afc785da449efc1b1a91b72d.jpg); */
+            background-image: url(https://disk.yandex.ru/client/disk/source?idApp=client&dialog=slider&idDialog=%2Fdisk%2Fsource%2FIMG_20220520_080615.jpg);
             background-size: cover;
             background-attachment: scroll;
         }
@@ -21,7 +22,7 @@
     /*Set height of body and the document to 100%*/
 
 .tablink {
-    background-color: #555;
+    background-color: rgb(188, 143, 143);;
     color: white;
     float: left;
     border: none;
@@ -33,7 +34,7 @@
 }
 
 .tablink:hover {
-    background-color: #777;
+    background-color: #778;
 }
 
 .tabcontent {
@@ -42,10 +43,10 @@
     padding: 100px 20px;
     height: 100%;
 }
-#Home {background-color: red;}
-#News {background-color: green;}
-#Contact {background-color: blue;}
-#About {background-color: orange;}
+#Home {background-color: rgba(255,255,255, 0.8); }
+#News {background-color: rgba(255,255,255, 0.8);}
+#Contact {background-color: rgba(255,255,255, 0.8);}
+#About {background-color: rgba(255,255,255, 0.8);}
        </style>
   </head>
 <body>
@@ -55,10 +56,10 @@
         </p>
     </div> 
  
-    <button class="tablink" onclick="openPage('Home', this, 'red')">Home</button>
-<button class="tablink" onclick="openPage('News', this, 'green')" id="defaultOpen">News</button>
-<button class="tablink" onclick="openPage('Contact', this, 'blue')">Contact</button>
-<button class="tablink" onclick="openPage('About', this, 'orange')">About</button>
+    <button class="tablink" onclick="openPage('Home', this, 'red')" id="defaultOpen">Прайс</button>
+<button class="tablink" onclick="openPage('News', this, 'green')">Акции</button>
+<button class="tablink" onclick="openPage('Contact', this, 'blue')">О шугаринге</button>
+<button class="tablink" onclick="openPage('About', this, 'orange')">О нас</button>
     
     <div id="Home" class="tabcontent">
       <h3>Home</h3>
@@ -97,9 +98,6 @@ function openPage(pageName, elmnt, color) {
 
     // Show the specific tab content
     document.getElementById(pageName).style.display = "block";
-
-    // Add the specific color to the button used to open the tab content
-    elmnt.style.backgroundColor = color;
 }
 document.getElementById("defaultOpen").click();
     </script>
